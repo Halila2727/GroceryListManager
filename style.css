@@ -1,0 +1,67 @@
+/*Setting the basic style of the page and the text*/
+body
+{
+  text-align:center;
+  background-color:gainsboro;
+  color: goldenrod;
+}
+
+h1
+{
+  text-align:center;
+  text-decoration: underline;
+  text-shadow: white;
+  color:goldenrod;
+  font-size: 60px;
+}
+
+div
+{
+ font-size: 25px;
+}
+/*Centering the image of the logo and making it stand out*/
+#image
+{
+  text-align:center;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Adjusting the up and down arrow images to fit the buttons well*/
+#up img
+{
+  display: block;
+  height: 20px;
+  width: 100%;
+}
+
+#down img
+{
+  display: block;
+  height: 20px;
+  width: 100%;
+}
+
+/*Customizing our display of the food list to make it look nicer and capitalize it*/
+#outbox
+{
+  display: block;
+  width: 90%;
+  margin: 2rem auto 0 auto;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  outline: none;
+}
+
+/*Stylizing our buttons*/
+.buttons
+{
+  transition-duration: 0.7s;
+}
+
+.buttons:hover {
+  background-color: lightslategray;
+  color: snow;
+}

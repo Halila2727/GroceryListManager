@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grocery List Website/Application</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload = "initialize();">
+  <script src="script.js"></script>
+    <div id="image">
+    <img src="ShopLiftUpINCLogo.png"">
+    </div>
+    
+    <h1> GROCERY LIST </h1>
+    
+    <hr />
+    
+    <!--Adding food to the customer's list of food-->
+    <form onsubmit ="return false" id = "information">
+    <div>Type the name of food item you want to add:</div>
+    </br> <input type = "text" id = "foodsel"/> 
+    <button onclick = "addFood();" class = "buttons"> Add Food </button>
+    </br> 
+    
+    <hr />
+    
+    <!--Removing food from the customer's list of food-->
+    <div>Type the name of the food item you want to delete:</div>
+    </br> <input type = "text" id = "fooddel"/>
+    <button onclick = "deleteFood();" class = "buttons"> Delete Food </button>
+    </br> <hr />
+
+    <!--Move food up or down in the list for the customer-->
+    <div>Type the number of the item you want to move: </div> 
+    </br> <input type = "number" name = "itemnumber"/> 
+    <button onclick = "moveUp();" id = "up" class = "buttons"><img src = "UpArrow.png" /></button>
+    <button onclick = "moveDown();" id = "down" class = "buttons"><img src = "DownArrow.png"/></button>
+    </form> 
+    
+    <hr />
+
+    <!-- Display the customer's list of food-->
+    <div id = "outbox"></div>
+  </body>
+</html>
